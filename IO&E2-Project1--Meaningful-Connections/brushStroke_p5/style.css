@@ -1,0 +1,9 @@
+.about {
+    position: absolute;
+    padding: 25px 25px 25px 25px;
+    width: 25%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, .7);
+    right: 0;
+    bottom: 0;
+}
