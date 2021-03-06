@@ -1,4 +1,4 @@
-let url = 'https://io.adafruit.com/api/v2/mais/feeds/button';
+let url = 'https://io.adafruit.com/.../feeds/button';
 let counter = 0;
 let brushStroke; // Declare object
 let currentDate;
