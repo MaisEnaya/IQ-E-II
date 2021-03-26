@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Out!</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+</head>
+
+<body>
+    <div class="header" id='header'>
+        <h1>Clock
+            out</h1>
+        <p>
+            shift your space to disconnect from work mode and share music with friends without it feeling like another meeting.
+        </p>
+    </div>
+
+
+    <!--    for a text to follow along a path, in this case circle, create path in Ai>export svg> clean in svg OMG> past path in where we want the text> give path an ID
+                >wrap text in the svg
+                >use start offset to say where text start on our path> can be used for animation
+        note:  cant have any text tags (h1, p, etc) inside here
+sources: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/textPath
+https://youtu.be/Tae96ze3xwY
+center svg https://codepen.io/musically_ut/pen/zGOWBj
+-->
+    <div class="centre">
+        <svg id="dropzone" width="600" height="600" viewBox="-50 -50 200 200">
+
+            <!-- to hide the path, it is usually wrapped in a <defs> element -->
+            <!-- <defs> -->
+            <path id="MyPath" fill="none" stroke="red" d="M10,90 Q90,90 90,45 Q90,10 50,10 Q10,10 10,40 Q10,70 45,70 Q70,70 75,50" />
+            <!-- </defs> -->
+
+
+            <text>
+                <textPath id="dropText" href="#MyPath">
+                    drag a sound file here drag a sound file here drag a sound file here
+                </textPath>
+            </text>
+
+
+        </svg>
+    </div>
+    <div class="party">party mode?
+        <button class="btn2" id='party' onclick="party()">yes</button>
+        <button class="btn2" id='chill' onclick="chill()">nah</button>
+    </div>
+
+    <div class="state" id="state">
+
+    </div>
+
+
+    <script src="sketch.js"></script>
+    <script src="soundvis.js"></script>
+</body></html>

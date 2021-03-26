@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Klasik Sans";
+    src: url("KlasikRegular.otf") format("opentype");
+}
+
+/*src="FDR_Klasik_Font_141016/FDR_Klasik_Font_141016/KlasikRegular.otf"*/
+* {
+    font-family: "Klasik Sans", sans-serif;
+
+}
+
+body {
+    margin: 0 5em;
+}
+
+p {
+    max-width: 700px;
+}
+
+.centre {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    /*    background-color: beige;*/
+}
+
+svg {
+    /*    background-color: fuchsia;*/
+    border-radius: 300px;
+}
+
+button {
+    padding: 1em;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    /*    float: right;*/
+}
+
+button:hover {
+    background-color: #FFFF66;
+
+}
+
+.party {
+    margin-top: -8em;
+    margin-left: 10px;
+    padding-bottom: 7em;
+    color: #999;
+
+}
+
+.btn2 {
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    /*    margin-top: -10em;*/
+    color: #999;
+
+
+}
+
+.btn2:hover {
+    background-color: transparent;
+    text-decoration: underline;
+
+
+}
+
+.state {
+    /*    float: right;*/
+    margin-left: 10px;
+    color: #999;
+    margin-top: -5em;
+    padding-bottom: 1em;
+}
